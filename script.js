@@ -1,15 +1,12 @@
-// Script to change the theme based on system preference
-const toggleDarkMode = (isDark) => {
-    if (isDark) {
-        document.body.classList.add('dark-mode');
-    } else {
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+    const hasDarkMode = document.body.classList.contains('dark-mode');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (hasDarkMode || (!hasDarkMode && !systemPrefersDark)) {
         document.body.classList.remove('dark-mode');
+        // Save the user's preference in local storage or cookies
+    } else {
+        document.body.classList.add('dark-mode');
+        // Save the user's preference in local storage or cookies
     }
-};
-
-// Check for system preference on load
-const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-toggleDarkMode(mediaQuery.matches);
-
-// Listen for changes in system preference
-mediaQuery.addListener((e) => toggleDarkMode(e.matches));
+});
