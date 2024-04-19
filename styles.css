@@ -1,90 +1,153 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #000;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Sticky navigation bar */
 .sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-}
-
-.top-nav {
+    background-color: #2c3e50; /* Adjust the color to match the design */
+    color: white;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.top-nav ul {
+/* Navigation links */
+.sticky-nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
-.top-nav ul li a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: black;
+.sticky-nav ul li {
+    padding: 0 10px;
 }
 
+.sticky-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav ul li a:hover {
+    color: #1abc9c; /* Highlight color on hover */
+}
+
+/* Search and social icons */
 .social-search {
     display: flex;
     align-items: center;
 }
 
 .social-search a {
+    color: white;
     text-decoration: none;
-    color: black;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
-#dark-mode-toggle {
-    margin-left: 10px;
-    cursor: pointer;
+.social-search a i {
+    transition: color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-    body.dark-mode {
-        background-color: #000;
-        color: #fff;
-    }
+.social-search a i:hover {
+    color: #1abc9c;
+}
 
-    .sticky-nav {
-        background-color: #222;
-    }
+/* Profile section with circular image */
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8; /* Light background for the profile area */
+    padding: 20px;
+    gap: 20px; /* Spacing between image and text */
+}
 
-    .top-nav ul li a {
-        color: white;
-    }
+.profile img {
+    border-radius: 50%;
+    max-width: 150px; /* Adjust size as necessary */
+    border: 5px solid white; /* White border around the image */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: shadow for depth */
+}
 
-    .social-search a {
-        color: white;
-    }
-
+/* Content area for Biography and Education */
 .content {
     display: flex;
-}
-
-.sidebar {
-    width: 25%;
+    justify-content: space-around;
     padding: 20px;
+    gap: 20px; /* Spacing between content areas */
 }
 
-.sidebar img {
-    width: 100%;
-    border-radius: 50%;
+.biography,
+.education {
+    width: 48%; /* Split the width */
 }
 
-.main-content {
-    width: 75%;
-    padding: 20px;
+/* Dark mode styles - will require JS to toggle the dark mode class */
+.dark-mode {
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
-/* Add responsive design as needed */
-/* Add dark mode styling */
+.dark-mode .sticky-nav {
+    background-color: #2c3e50;
+}
+
+.dark-mode .content {
+    background-color: #34495e;
+}
+
+@media screen and (max-width: 768px) {
+    .profile,
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biography,
+    .education {
+        width: 100%;
+        /* Add some margin to the bottom of each section for better spacing on small screens */
+        margin-bottom: 20px;
+    }
+
+    .sticky-nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sticky-nav ul li {
+        padding: 10px 0; /* Give some vertical padding */
+    }
+
+    .social-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-search a,
+    .social-search button {
+        padding: 5px 0; /* Add some padding above and below each icon/button */
+    }
+
+    .profile img {
+        width: 120px; /* Adjust image size for smaller screens */
+        height: auto;
+        margin-bottom: 10px; /* Add space below the image */
+    }
+}
