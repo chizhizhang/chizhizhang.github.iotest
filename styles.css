@@ -1,67 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background: #fff;
 }
 
-.container {
+#top-nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
 }
 
-.header {
+.main-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background: #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.profile {
+    flex-basis: 30%;
     padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
 }
 
-.header .portrait {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
+.profile img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
-.navigation {
-    width: 100%;
-    background-color: #333;
+.details {
+    flex-basis: 70%;
+    padding: 20px;
 }
 
-.navigation ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation ul li {
+/* For the sticky navigation bar */
+nav a {
     padding: 10px;
-}
-
-.navigation ul li a {
-    color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    color: black;
 }
 
-.navigation ul li a:hover,
-.navigation ul li a:focus {
-    background-color: #555;
-    border-radius: 5px;
+nav button {
+    /* Style for the mode toggle button */
 }
 
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 1em;
+/* For the right navigation with social icons */
+.right-nav a {
+    /* Styles for social media icons */
 }
 
+/* Styles for dark and light mode */
+.dark-mode {
+    /* ... */
+}
+
+/* You will need media queries for responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .profile, .details {
+        flex-basis: 100%;
+    }
+}
+
+/* Rest of your CSS */
