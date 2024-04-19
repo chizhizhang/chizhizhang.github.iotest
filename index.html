@@ -3,57 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Academic Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="path_to_your_portrait.jpg" alt="Your Portrait" class="portrait"> <!-- Replace with your image file -->
-            <div>
-                <h1>Your Name</h1>
-                <p>Title, Department, Institution</p>
-                <p>Email: email@example.com</p>
-                <div class="social-links">
-                    <!-- Replace '#' with your actual profile links -->
-                    <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">Google Scholar</a>
-                    <!-- Add other social media links here -->
-                </div>
+    <header id="top-nav">
+        <nav>
+            <div class="left-nav">
+                <!-- Add links for navigation -->
+                <a href="#home">Home</a>
+                <a href="#posts">Posts</a>
+                <!-- ... other links ... -->
             </div>
-        </header>
-
-        <nav class="navigation">
-            <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#presentations">Presentations</a></li>
-                <li><a href="#students">Students</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#position">Position</a></li>
-            </ul>
+            <div class="right-nav">
+                <!-- Add links for social icons, search, and mode toggle -->
+                <a href="#twitter">Twitter</a>
+                <!-- ... other icons ... -->
+                <button id="mode-toggle">Mode</button>
+            </div>
         </nav>
+    </header>
 
-    <section id="bio">
-        <h2>Bio</h2>
-        <p>Your biography text goes here...</p>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <!-- Publications list -->
-    </section>
-
-    <section id="presentations">
-        <h2>Presentations</h2>
-        <!-- Presentations list -->
-    </section>
-
-    <!-- Other sections like Students, Service, Resume, and Position can continue here -->
-
-    <footer>
-        <p>Copyright © Your Name</p>
-    </footer>
+    <div class="main-content">
+        <aside class="profile">
+            <img src="your-photo.jpg" alt="Your Portrait">
+            <h2>Your Name</h2>
+            <p>Your Position</p>
+            <!-- ... additional profile details ... -->
+        </aside>
+        <section class="details">
+            <h1>Biography</h1>
+            <p>Your biography text...</p>
+            <!-- ... additional content ... -->
+        </section>
+    </div>
 </body>
 </html>
