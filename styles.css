@@ -1,41 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Replace 'path_to_icon_library' with the actual path to your icon library, if you are using one -->
-    <link rel="stylesheet" href="https://path_to_icon_library">
-</head>
-<body>
-    <header>
-        <img src="path_to_your_portrait.jpg" alt="Your Portrait" class="portrait"> <!-- Replace with your image file -->
-        <h1>Your Name</h1>
-        <p>Title, Department, Institution</p>
-        <p>Email: email@example.com</p>
-        <div class="social-links">
-            <!-- Replace '#' with your actual profile links and 'icon-class' with actual icon classes -->
-            <a href="#" target="_blank"><i class="icon-class">LinkedIn</i></a>
-            <a href="#" target="_blank"><i class="icon-class">Google Scholar</i></a>
-            <!-- Add other social media links with icons here -->
-        </div>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
 
-    <nav>
-        <ul>
-            <!-- Navigation links -->
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#presentations">Presentations</a></li>
-            <li><a href="#students">Students</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#position">Position</a></li>
-        </ul>
-    </nav>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <!-- The rest of your content sections go here... -->
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-</body>
-</html>
+.header .portrait {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #333;
+}
+
+.navigation ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li {
+    padding: 10px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a:focus {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+}
+
