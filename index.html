@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Academic Profile</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Your Name - Academic Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your_kit_code.js"></script> <!-- Replace with your Font Awesome kit code -->
 </head>
 <body>
-    <header id="top-nav">
-        <nav>
-            <div class="left-nav">
-                <!-- Add links for navigation -->
-                <a href="#home">Home</a>
-                <a href="#posts">Posts</a>
-                <!-- ... other links ... -->
-            </div>
-            <div class="right-nav">
-                <!-- Add links for social icons, search, and mode toggle -->
-                <a href="#twitter">Twitter</a>
-                <!-- ... other icons ... -->
-                <button id="mode-toggle">Mode</button>
-            </div>
-        </nav>
-    </header>
 
-    <div class="main-content">
-        <aside class="profile">
-            <img src="your-photo.jpg" alt="Your Portrait">
-            <h2>Your Name</h2>
-            <p>Your Position</p>
-            <!-- ... additional profile details ... -->
-        </aside>
-        <section class="details">
-            <h1>Biography</h1>
-            <p>Your biography text...</p>
-            <!-- ... additional content ... -->
-        </section>
+<div class="sticky-nav">
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-search">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <button id="dark-mode-toggle">Dark/Light</button>
+        </div>
+    </nav>
+</div>
+
+<div class="content">
+    <div class="sidebar">
+        <img src="path_to_your_image.jpg" alt="Your Name">
+        <h1>Your Name</h1>
+        <p>Title, Department, Institution</p>
+        <!-- Rest of your sidebar content -->
     </div>
+    <div class="main-content">
+        <!-- Main content here -->
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
