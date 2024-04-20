@@ -6,7 +6,7 @@
 }
 /* Apply basic font and line height to body */
 body {
-    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji；
     line-height: 1.5;
     background: #f8f8f8; /* Assuming you want a light grey background for body */
     justify-content: center; 
@@ -135,7 +135,6 @@ body {
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center text alignment */
     padding: 20px;
-    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 
