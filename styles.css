@@ -6,9 +6,8 @@
 }
 /* Apply basic font and line height to body */
 body {
-    --font-family-sans-serif:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
-    font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 300; /* 设置字体的粗细为 300，确保使用 SF Mono 的细体 */
     line-height: 1.5;
     background: #f8f8f8; /* Assuming you want a light grey background for body */
     justify-content: center; 
