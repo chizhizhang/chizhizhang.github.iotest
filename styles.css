@@ -81,8 +81,8 @@ body {
 
 .avatar {
   border-radius: 50%;
-  width: 100px; /* Set the width of the avatar */
-  height: 100px; /* Set the height of the avatar */
+  width: 150px; /* Set the width of the avatar */
+  height: 150px; /* Set the height of the avatar */
   object-fit: cover; /* Maintain the aspect ratio and cover the entire container */
 }
 
