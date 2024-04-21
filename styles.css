@@ -167,6 +167,7 @@ body {
 }
 
 .sidebar {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, liberation mono, courier new, monospace !important
     flex: 3;
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center items horizontally */
